@@ -31,7 +31,7 @@ function ModalInicio({ isOpen, onClose, onOpenRegistro, onLoginSuccess }) {
         setError('Correo o contraseña incorrectos.');
       }
     } catch (error) {
-      setError('Error al conectar con el servidor: ' + error.message);
+      window.location.reload();
     }
   };
 
