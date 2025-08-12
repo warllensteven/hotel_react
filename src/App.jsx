@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="relative">
         <Header />
-        <main className="px-4 py-8">
+        <main className="px-4">
           <Routes>
             <Route
               path="/"
