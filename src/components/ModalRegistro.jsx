@@ -58,7 +58,7 @@ function ModalRegistro({ isOpen, onClose, onRegisterSuccess }) {
         </span>
         <div className="text-center">
           <img
-            src="/imgs/nubes.svg"
+            src={`${import.meta.env.BASE_URL}imgs/nubes.svg`}
             alt="Logo Hotel"
             className="w-20 mx-auto mb-3"
           />

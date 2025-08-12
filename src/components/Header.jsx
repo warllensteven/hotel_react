@@ -44,7 +44,7 @@ function Header() {
             <a href="/" className="-m-1.5 p-1.5">
               <img
                 className="h-8 w-auto"
-                src="/imgs/nubes.svg"
+                src={`${import.meta.env.BASE_URL}imgs/nubes.svg`}
                 alt="Logo Hotel"
               />
             </a>
@@ -126,7 +126,7 @@ function Header() {
               <a href="/" className="-m-1.5 p-1.5">
                 <img
                   className="h-8 w-auto"
-                  src="/imgs/mark.svg"
+                  src={`${import.meta.env.BASE_URL}imgs/nubes.svg`}
                   alt="Logo Hotel"
                 />
               </a>

@@ -41,18 +41,18 @@ function Carrusel() {
     <section id="cont-carrusel" className="py-12 sm:py-12 lg:py-12">
       <div className="relative mx-auto max-w-7xl h-64 sm:h-96">
         <img
-          src="/imgs/arrow-left.svg"
+          src={`${import.meta.env.BASE_URL}imgs/arrow-left.svg`}
           alt="Izquierda"
           className="absolute top-1/2 left-4 transform -translate-y-1/2 h-8 w-8 cursor-pointer z-10"
           onClick={handlePrev}
         />
         <img
-          src={`/imgs/${currentImgsCarrusel[contCarrusel]}`}
+          src={`${import.meta.env.BASE_URL}imgs/${currentImgsCarrusel[contCarrusel]}`}
           alt="Imagen carrusel hotel"
           className="w-full h-full object-cover rounded-lg"
         />
         <img
-          src="/imgs/arrow-right.svg"
+          src={`${import.meta.env.BASE_URL}imgs/arrow-right.svg`}
           alt="Derecha"
           className="absolute top-1/2 right-4 transform -translate-y-1/2 h-8 w-8 cursor-pointer z-10"
           onClick={handleNext}

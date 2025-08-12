@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { API } from '../utils/api';
+import { useRouteLoaderData } from 'react-router-dom';
 
 function ModalInicio({ isOpen, onClose, onOpenRegistro, onLoginSuccess }) {
   const [email, setEmail] = useState('');
@@ -15,7 +16,8 @@ function ModalInicio({ isOpen, onClose, onOpenRegistro, onLoginSuccess }) {
 
     try {
       const response = await fetch(`${API}/usuarios`);
-      if (!response.ok) throw new Error('Error al conectar con el servidor');
+        if (!response.ok) {window.location.reload()}
+;
       const data = await response.json();
       const usuario = data.find((u) => u.correo === email && u.contraseña === password);
 
@@ -47,7 +49,7 @@ function ModalInicio({ isOpen, onClose, onOpenRegistro, onLoginSuccess }) {
         </span>
         <div className="text-center">
           <img
-            src="/imgs/nubes.svg"
+            src={`${import.meta.env.BASE_URL}imgs/nubes.svg`}
             alt="Logo Hotel"
             className="w-20 mx-auto mb-3"
           />
