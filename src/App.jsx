@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="relative">
         <Header />
-        <main className="px-4">
+        <main className="py-8 px-4">
           <Routes>
             <Route
               path="/"
