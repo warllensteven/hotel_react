@@ -68,7 +68,6 @@ function Header() {
 
           <div className="hidden lg:flex lg:gap-x-12">
             <Link to="/" className="text-sm font-semibold text-gray-900">Inicio</Link>
-            <a href="#cont-servicios" className="text-sm font-semibold text-gray-900">Servicios</a>
             <Link to="/reservas" className="text-sm font-semibold text-gray-900">Reservas</Link>
             <Link to="/informacion" className="text-sm font-semibold text-gray-900">Sobre nosotros</Link>
           </div>
@@ -128,6 +127,9 @@ function Header() {
                 <div className="space-y-2 py-6">
                   <Link to="/" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
                     Inicio
+                  </Link>
+                  <Link to="#cont-servicios" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
+                    Servicios
                   </Link>
                   <a href="#cont-servicios" className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50" onClick={() => setIsMenuOpen(false)}>
                     Servicios
