@@ -12,10 +12,11 @@ import Informacion from './components/Informacion';
 function App() {
   return (
     <Router>
-      <div className="relative">
+      <div className="relative flex flex-col min-h-screen">
         <Header />
-        <main className="py-8 px-4">
+        <main className="flex-grow py-8 px-4">
           <Routes>
+            {/* Página principal */}
             <Route
               path="/"
               element={
