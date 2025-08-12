@@ -8,17 +8,17 @@ function Footer() {
           </p>
           <ul className="flex space-x-4 mt-4 md:mt-0">
             <li>
-              <a href="#" className="hover:underline font-semibold">
+              <a href="#" className="hover:underline font-semibold text-white">
                 Política de privacidad
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline font-semibold">
+              <a href="#" className="hover:underline font-semibold text-white">
                 Términos y condiciones
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline font-semibold">
+              <a href="#" className="hover:underline font-semibold text-white">
                 Contáctanos
               </a>
             </li>
